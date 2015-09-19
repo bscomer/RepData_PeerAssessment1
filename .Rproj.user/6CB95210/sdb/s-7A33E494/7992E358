@@ -1,0 +1,25 @@
+{
+    "contents" : "",
+    "created" : 1442701158890.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "7992E358",
+    "lastKnownWriteTime" : 8243102915230572654,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "y3jnmwajfe",
+        "caption" : "step_sum_by_interval",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=step_sum_by_interval&cache_key=y3jnmwajfe",
+        "displayedObservations" : "288",
+        "environment" : "",
+        "object" : "step_sum_by_interval",
+        "totalObservations" : "288",
+        "variables" : "2"
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}

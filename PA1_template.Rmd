@@ -77,6 +77,8 @@ plot(step_sum_by_interval$interval, step_sum_by_interval$mean, type="l",
      xlab="5 minute interval", ylab="Mean Number of Steps")
 ```
 
+Activity appears to peak between intervals 600 and 1000 based upon the time series plot.
+
 Which 5-min interval, on average across all days, contains the maximum number of steps?
 ```{r}
 max_interval<-which.max(step_sum_by_interval$mean)
@@ -84,7 +86,7 @@ max_interval<-which.max(step_sum_by_interval$mean)
 
 The 5-min interval that contains the maximum number of steps is listed below:
 ```{r, echo=FALSE}
-max_interval
+step_sum_by_interval[max_interval,1]
 ```
 
 Inputting missing values
@@ -179,3 +181,5 @@ par(mfrow=c(2,1))
 plot(weekend_activity$interval, weekend_activity$mean, type="l", main="Weekend Activity", xlab="5 min Interval ", ylab="Mean Steps")
 plot(weekday_activity$interval, weekday_activity$mean, type="l", main="Weekday Activity", xlab="5 min Interval", ylab="Mean Steps")
 ```
+
+Activity peaks between intervals 600 and 1000 but weekend activity remains high throughout the day.
