@@ -1,0 +1,25 @@
+{
+    "contents" : "",
+    "created" : 1442605909655.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "4A200A97",
+    "lastKnownWriteTime" : 578055781,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "fvzolwbuod",
+        "caption" : "weekend_activity",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=weekend_activity&cache_key=fvzolwbuod",
+        "displayedObservations" : 288,
+        "environment" : "",
+        "object" : "weekend_activity",
+        "totalObservations" : 288,
+        "variables" : 2
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}

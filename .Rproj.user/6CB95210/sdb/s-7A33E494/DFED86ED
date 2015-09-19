@@ -1,0 +1,25 @@
+{
+    "contents" : "",
+    "created" : 1442698829807.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "DFED86ED",
+    "lastKnownWriteTime" : 21392300099829876,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "kw7l8yhdgu",
+        "caption" : "sumStepsNAreplace_daily",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=sumStepsNAreplace_daily&cache_key=kw7l8yhdgu",
+        "displayedObservations" : 61,
+        "environment" : "",
+        "object" : "sumStepsNAreplace_daily",
+        "totalObservations" : 61,
+        "variables" : 2
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}

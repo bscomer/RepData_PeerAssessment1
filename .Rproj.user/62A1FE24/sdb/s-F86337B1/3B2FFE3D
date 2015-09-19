@@ -1,0 +1,25 @@
+{
+    "contents" : "",
+    "created" : 1442605492659.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "3B2FFE3D",
+    "lastKnownWriteTime" : 1919119919,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "z3yjbzwjbq",
+        "caption" : "weekday_activity",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=weekday_activity&cache_key=z3yjbzwjbq",
+        "displayedObservations" : "12960",
+        "environment" : "",
+        "object" : "weekday_activity",
+        "totalObservations" : "12960",
+        "variables" : "5"
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}

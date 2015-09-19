@@ -1,0 +1,17 @@
+{
+    "contents" : "unzip(\"./repdata-data-activity.zip\")\nactivity<-read.csv(\"./activity.csv\")\nlibrary(plyr)\nstep_sum<-ddply(activity,~date, summarize, sum=sum(steps, na.rm=FALSE))\nstep_sum_by_interval<-ddply(activity,~interval, summarize, mean=mean(steps,na.rm=TRUE))\nhist(step_sum$sum, breaks=20, col=\"red\", main= \"Distribution of Total Number of Steps\",\n     xlab=\"Total Number of Steps in a Day\",\n     ylab=\"Frequency in Days\")\nmean_steps<-mean(step_sum[,2], na.rm=FALSE)\nstep_sum[,2]\n\nmean_median_activity<-ddply(activity, ~date, summarize, mean=mean(steps), median=median(steps))\n\nmean_steps<-mean(step_sum[,2], na.rm=TRUE)\nmedian_steps<-median(step_sum[,2], na.rm=TRUE)\nplot(step_sum_by_interval$interval, step_sum_by_interval$mean, type=\"l\",\n     xlab=\"5 minute interval\", ylab=\"Mean Number of Steps\")\nmax(step_sum_by_interval$mean)\nmax_interval<-which.max(step_sum_by_interval$mean)\nprint(step_sum_by_interval$interval[max_interval])\n\nsum(length(which(is.na(activity$steps))))\nNAreplace_activity<-activity\nfor (i in 1:nrow(NAreplace_activity)) {\n  if (is.na(NAreplace_activity$steps[i])) {\n    NAreplace_activity$steps[i] <- step_sum_by_interval[which(NAreplace_activity$interval[i] == step_sum_by_interval$interval), ]$mean\n  }\n}\nhist(step_sum$sum, breaks=20, col=\"red\", main= \"Distribution of Total Number of Steps\",\n     xlab=\"Total Number of Steps in a Day\",\n     ylab=\"Frequency in Days\")\nNAreplace_activity\nmean_median_NAreplace<-ddply(NAreplace_activity, ~date, summarize, mean=mean(steps), median=median(steps))\n",
+    "created" : 1442694526990.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1152827627",
+    "id" : "6A5156CC",
+    "lastKnownWriteTime" : 1442694599,
+    "path" : "C:/Users/brian/Desktop/rcr_project1/rcr_project1/script.R",
+    "project_path" : "rcr_project1/script.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
